@@ -58,11 +58,13 @@ ReAct는 LLM이 Reasoning과 Acting을 결합하여 문제를 해결하도록 �
     LLM이 현재까지의 정보를 바탕으로 다음에 해야 할 추론 또는 행동을 언어로 표현
     
     - 예: "날씨 정보를 얻기 위해 검색이 필요하다."
+ 
 - **Action (행동)**
     
     LLM이 필요하다고 판단한 도구(tool)나 함수(function)를 명시적으로 호출
     
     - 예: `"action": { "name": "google", "input": "오늘 서울 날씨" }`
+      
 - **Observation (관찰)**
     
     도구 실행 결과로 얻은 정보를 LLM에 다시 제공하여 다음 추론의 기반으로 사용
@@ -79,6 +81,7 @@ e.g. 오늘 날씨 어때?
 4. thought: "관찰 결과를 바탕으로 답변을 생성하자."
 5. response: "오늘 서울은 맑고 기온은 29도입니다."
 ```
+
 
 ### **Function Calling과 Tool의 차이**
 
@@ -112,6 +115,7 @@ def wiki_search(query: str) -> str:
 | **Function Calling** (Action) | 실제 필요한 행동을 Json 형태 등으로 명시 |
 | **Observation** | 실행 결과를 받아 다음 추론에 활용 |
 | **LLM Loop** | 위의 과정을 반복하여 문제 해결 |
+
 
 ## **CoT vs Act-Only vs ReAct**
 <img width="1071" height="455" alt="Act_CoT_ReAct" src="https://github.com/user-attachments/assets/b77f08c5-0ca1-43b2-987f-7a56151445df" />
@@ -153,6 +157,7 @@ Act만 수행하는 경우, 이전에 수행한 행동이나 관찰만으로는 
 Act만 할 경우에는 현재까지 진행한 문맥(cₜ)과 현재 시점에서 진행해야 하는 행동(a**ₜ**) 매핑이 힘듦
 
 
+
 ### **ReAct(1d)**
 
 1. Thought를 통해 다음에 할 행동이 무엇인지 판단
@@ -160,6 +165,7 @@ Act만 할 경우에는 현재까지 진행한 문맥(cₜ)과 현재 시점에�
 3. Obs에 검색된 결과가 나옴
 
 위에 대화 기록들을 저장하고 순회하며 최종적으로 적절합 답변을 도출함
+
 
 
 ## **CoT vs ReAct 비교 실험**
