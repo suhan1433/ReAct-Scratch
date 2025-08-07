@@ -249,6 +249,7 @@ Fever(CoT보다 더 우수한 성능(60.9 vs. 56.3))
 - 다음 행동을 제대로 추론하지 못하고 루프에 빠짐
 
 e.g.
+
 <img width="705" height="215" alt="Reasoning_Error" src="https://github.com/user-attachments/assets/17494a69-9fb2-415e-9547-5d30edc7d06d" />
 
 - Hairspray에 출연한 여러 배우들과 함께 출연한 "여배우"의 미들 네임을 묻는 질문
