@@ -675,3 +675,8 @@ WHERE age > 30;
 2. 피드백 기능의 한계가 있어 보임
     - 따로 피드백 Tool을 만들어 처리해야 할 듯
 3. 다양한 디자인 패턴으로 시도해볼만 한 듯
+
+## Reference
+[https://github.com/arunpshankar/react-from-scratch/blob/main/src/react/agent.py](https://github.com/arunpshankar/react-from-scratch)
+
+https://arxiv.org/pdf/2210.03629
