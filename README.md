@@ -1,7 +1,10 @@
-# ReAct-Scratch
+# ReAct
 ReAct Agent Description &amp; Code
 
-# ReAct
+- [실험 방법](#실험)
+- [실험 결과](#결과)
+- [LN의 GPU 동기화 과정](#GPU-동기화-과정-예시)
+- [Pre,Post LN 기울기 문제 고찰](#appendixpre-ln-post-ln의-기울기-소실-및-증폭-문제-분석)
 
 ## **개요**
 
@@ -110,7 +113,7 @@ def wiki_search(query: str) -> str:
 | **Observation** | 실행 결과를 받아 다음 추론에 활용 |
 | **LLM Loop** | 위의 과정을 반복하여 문제 해결 |
 
-### **CoT vs Act-Only vs ReAct**
+## **CoT vs Act-Only vs ReAct**
 <img width="1071" height="455" alt="Act_CoT_ReAct" src="https://github.com/user-attachments/assets/b77f08c5-0ca1-43b2-987f-7a56151445df" />
 
 
