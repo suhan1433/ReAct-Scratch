@@ -2,9 +2,10 @@
 ReAct Agent Description &amp; Code
 
 - [ReAct란?](#react란)
-- [CoT vs Act-Only vs ReAct](#cot-vs-act-only-vs-react)
-- [CoT vs ReAct 비교 실험](#cot-vs-react-비교-실험)
+- [CoT vs Act-Only vs ReAct(논문)](#cot-vs-act-only-vs-react)
+- [CoT vs ReAct 비교 실험(논문)](#cot-vs-react-비교-실험)
 - [실험](#실험)
+- [결론](#결론)
 
 ## **개요**
 
