@@ -42,8 +42,7 @@ Final Answer: 서울의 오늘 날씨는...
 Prompt로 In-Context learning을 진행할 시 성능 좋지 않음,
 
 3000개로 Finetune 진행 시 성능 오름.
-
-![스크린샷 2025-08-06 오후 6.27.10.png](ReAct%2021404077303280de8f0df6f7b79a959a/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2025-08-06_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.27.10.png)
+<img width="847" height="327" alt="Prompt_Fintune" src="https://github.com/user-attachments/assets/2bb099b9-b250-44dd-a3f7-a84da65aa35e" />
 
 ## **ReAct란?**
 
@@ -112,8 +111,8 @@ def wiki_search(query: str) -> str:
 | **LLM Loop** | 위의 과정을 반복하여 문제 해결 |
 
 ### **CoT vs Act-Only vs ReAct**
+<img width="1071" height="455" alt="Act_CoT_ReAct" src="https://github.com/user-attachments/assets/b77f08c5-0ca1-43b2-987f-7a56151445df" />
 
-![스크린샷 2025-08-06 오후 4.46.14.png](ReAct%2021404077303280de8f0df6f7b79a959a/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2025-08-06_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_4.46.14.png)
 
 ### **CoT의 한계점(1b)**
 
@@ -159,7 +158,7 @@ Act만 할 경우에는 현재까지 진행한 문맥(cₜ)과 현재 시점에�
 
 ## **CoT vs ReAct 비교 실험**
 
-![스크린샷 2025-08-06 오후 5.40.38.png](ReAct%2021404077303280de8f0df6f7b79a959a/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2025-08-06_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_5.40.38.png)
+<img width="1018" height="204" alt="CoT_ReAct_" src="https://github.com/user-attachments/assets/f5eadd94-0d0b-466a-a368-c0b13b7e0a6c" />
 
 Model: PaLM 540B(Finetuning x)
 
@@ -247,8 +246,7 @@ Fever(CoT보다 더 우수한 성능(60.9 vs. 56.3))
 - 다음 행동을 제대로 추론하지 못하고 루프에 빠짐
 
 e.g.
-
-![스크린샷 2025-08-06 오후 6.14.08.png](ReAct%2021404077303280de8f0df6f7b79a959a/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2025-08-06_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.14.08.png)
+<img width="705" height="215" alt="Reasoning_Error" src="https://github.com/user-attachments/assets/17494a69-9fb2-415e-9547-5d30edc7d06d" />
 
 - Hairspray에 출연한 여러 배우들과 함께 출연한 "여배우"의 미들 네임을 묻는 질문
     
@@ -266,8 +264,9 @@ e.g.
     → **모델의 추론 흐름이 흐트러지고, 회복도 어려움**
     
 - ReAct + CoT-SC 결합 전략으로 어느정도 해결
-    
-    ![스크린샷 2025-08-06 오후 6.19.29.png](ReAct%2021404077303280de8f0df6f7b79a959a/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA_2025-08-06_%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE_6.19.29.png)
+
+<img width="709" height="157" alt="Search_Error" src="https://github.com/user-attachments/assets/6f6383c0-6617-4652-8c2f-5b2b8ac5eeb0" />
+
     
 
 A) ReAct → CoT-SC:
@@ -285,8 +284,7 @@ CoT-SC에서 n개의 샘플 중 과반수(n/2)보다 적은 수의 샘플만이 
 ## **실험**
 
 Gpt 4.1-mini로 실험
-
-![image-20250806-110942.png](ReAct%2021404077303280de8f0df6f7b79a959a/image-20250806-110942.png)
+<img width="820" height="976" alt="Architecture" src="https://github.com/user-attachments/assets/4177210d-39d0-4d15-804a-e26cca831125" />
 
 ### **피드백 방법**
 
