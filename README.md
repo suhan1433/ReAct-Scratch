@@ -620,46 +620,48 @@ A: SQL의 select 문은 데이터베이스에서 데이터를 조회할 때 사�
 
 1. 결과
 
+
 ```
 최종 답변:
 SQL의 select 문은 데이터베이스에서 데이터를 조회할 때 사용하는 명령어입니다. 기본적인 문법은 다음과 같습니다:
-```
+
 SELECT 컬럼명1, 컬럼명2, ...
 FROM 테이블명
 WHERE 조건식;
-```
+
 예를 들어, 'employees' 테이블에서 이름(name)과 나이(age)를 조회하려면:
-```
+
 SELECT name, age
 FROM employees;
-```
+
 특정 조건을 걸고 싶으면 WHERE 절을 사용합니다:
-```
+
 SELECT name, age
 FROM employees
 WHERE age > 30;
-```
+
 이 외에도 정렬(ORDER BY), 그룹화(GROUP BY) 등 다양한 옵션이 있습니다. 더 구체적인 예시나 기능을 원하시면 알려주세요.
 [최종 답변]
 최종 답변: SQL의 select 문은 데이터베이스에서 데이터를 조회할 때 사용하는 명령어입니다. 기본적인 문법은 다음과 같습니다:
-```
+
 SELECT 컬럼명1, 컬럼명2, ...
 FROM 테이블명
 WHERE 조건식;
-```
+
 예를 들어, 'employees' 테이블에서 이름(name)과 나이(age)를 조회하려면:
-```
+
 SELECT name, age
 FROM employees;
-```
+
 특정 조건을 걸고 싶으면 WHERE 절을 사용합니다:
-```
+
 SELECT name, age
 FROM employees
 WHERE age > 30;
-```
+
 이 외에도 정렬(ORDER BY), 그룹화(GROUP BY) 등 다양한 옵션이 있습니다. 더 구체적인 예시나 기능을 원하시면 알려주세요.
 ```
+
 
 ## **결론**
 
