@@ -1,10 +1,10 @@
 # ReAct
 ReAct Agent Description &amp; Code
 
-- [실험 방법](#실험)
-- [실험 결과](#결과)
-- [LN의 GPU 동기화 과정](#GPU-동기화-과정-예시)
-- [Pre,Post LN 기울기 문제 고찰](#appendixpre-ln-post-ln의-기울기-소실-및-증폭-문제-분석)
+- [ReAct란?](#react란)
+- [CoT vs Act-Only vs ReAct](#cot-vs-act-only-vs-react)
+- [CoT vs ReAct 비교 실험](#cot-vs-react-비교-실험)
+- [실험](#실험)
 
 ## **개요**
 
@@ -288,6 +288,8 @@ B) CoT-SC → ReAct:
 CoT-SC에서 n개의 샘플 중 과반수(n/2)보다 적은 수의 샘플만이 동일한 최종 답을 낸 경우,
 
 이는 내부 지식(internal knowledge)만으로는 확신을 갖기 어렵다는 뜻이므로, ReAct 방식으로 되돌아감
+
+
 
 ## **실험**
 
