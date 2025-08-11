@@ -70,7 +70,6 @@ class Agent:
             self.trace("assistant", "최대 반복 횟수 도달. 중단합니다.")
             return
         prompt = self.make_prompt()
-        print("프롬프트내용들",prompt)
         response = self.ask_llm(prompt)
         self.trace("assistant", f"Thought: {response}")
         self.decide(response)
@@ -185,7 +184,6 @@ class Agent:
             messages=[{"role": "system", "content": "Assistant can use tools"},
                       {"role": "user", "content": prompt}]
         )
-        print("여기야",response.choices[0].message.content.strip())
         return response.choices[0].message.content.strip()
     
 
